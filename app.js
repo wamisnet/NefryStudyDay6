@@ -18,10 +18,12 @@ rootRef.on("value", function (ss) {
     var msg = ss.val();
     //html のtempIDにFirebaseから取得した値を入れる
     document.getElementById("temp").innerText = msg.temp + "℃";
-    Push.create('こんにちは！', {
-        body: '更新をお知らせします！',
-        timeout: 8000, // 通知が消えるタイミング
-    });
+    if (msg.temp > 25) {
+        Push.create('センサー情報', {
+            body: '指定された温度を超えました。現在の温度は' + msg.temp + "℃です。",
+            timeout: 8000, // 通知が消えるタイミング
+        });
+    }
 });
 
 Push.Permission.request();
