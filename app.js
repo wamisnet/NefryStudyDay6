@@ -27,3 +27,7 @@ rootRef.on("value", function (ss) {
 });
 
 Push.Permission.request();
+
+function btnClick(io,state) {
+    rootRef.child("led"+io).set(state);
+}
