@@ -24,10 +24,14 @@ rootRef.on("value", function (ss) {
             timeout: 8000, // 通知が消えるタイミング
         });
     }
+    document.getElementById("LED1").innerText = "LED1 : " + (msg.led1 ? "ON" : "OFF");
+    document.getElementById("LED2").innerText = "LED2 : " + (msg.led2 ? "ON" : "OFF");
+    document.getElementById("LED3").innerText = "LED3 : " + (msg.led3 ? "ON" : "OFF");
+    document.getElementById("LED4").innerText = "LED4 : " + (msg.led4 ? "ON" : "OFF");
 });
 
 Push.Permission.request();
 
-function btnClick(io,state) {
-    rootRef.child("led"+io).set(state);
+function btnClick(io, state) {
+    rootRef.child("led" + io).set(state);
 }
