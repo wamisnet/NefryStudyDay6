@@ -7,6 +7,14 @@
     <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/push.js/1.0.11/push.min.js"></script>
+    
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/css/uikit.min.css" />
+    
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js"></script>
+
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
@@ -17,14 +25,14 @@
     <div id="LED2"></div>
     <div id="LED3"></div>
     <div id="LED4"></div>
-    <button id="btn" onclick="btnClick(1,true)">LED1 ON</button>
-    <button id="btn" onclick="btnClick(1,false)">LED1 OFF</button>
-    <button id="btn" onclick="btnClick(2,true)">LED2 ON</button>
-    <button id="btn" onclick="btnClick(2,false)">LED2 OFF</button>
-    <button id="btn" onclick="btnClick(3,true)">LED3 ON</button>
-    <button id="btn" onclick="btnClick(3,false)">LED3 OFF</button>
-    <button id="btn" onclick="btnClick(4,true)">LED4 ON</button>
-    <button id="btn" onclick="btnClick(4,false)">LED4 OFF</button>
+    <button id="btn" onclick="btnClick(1,true)"  class="uk-button uk-button-default">LED1 ON</button>
+    <button id="btn" onclick="btnClick(1,false)" class="uk-button uk-button-default">LED1 OFF</button>
+    <button id="btn" onclick="btnClick(2,true)"  class="uk-button uk-button-default">LED2 ON</button>
+    <button id="btn" onclick="btnClick(2,false)" class="uk-button uk-button-default">LED2 OFF</button>
+    <button id="btn" onclick="btnClick(3,true)"  class="uk-button uk-button-default">LED3 ON</button>
+    <button id="btn" onclick="btnClick(3,false)" class="uk-button uk-button-default">LED3 OFF</button>
+    <button id="btn" onclick="btnClick(4,true)"  class="uk-button uk-button-default">LED4 ON</button>
+    <button id="btn" onclick="btnClick(4,false)" class="uk-button uk-button-default">LED4 OFF</button>
     <script src="app.js"></script>
 </body>
 
